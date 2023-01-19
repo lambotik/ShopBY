@@ -1,3 +1,3 @@
 class LoginData:
-    email = 'lambotik1988@gmail.com'
-    password = 'M@il3261415'
+    email = 'Ваш Email'
+    password = 'Ваш Пароль'
