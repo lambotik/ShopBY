@@ -1,0 +1,138 @@
+
+-----
+Test: test_shop_page.py::TestUserFormPage::TestLoginPage::test_enter_without_email (call)
+Start time: 2023-01-20 00:45:50.519443
+Start name method: enter_without_email
+
+End time: 2023-01-20 00:45:53.184452
+End name method: enter_without_email
+URL: https://shop.by/
+
+-----
+
+-----
+Test: test_shop_page.py::TestUserFormPage::TestLoginPage::test_enter_without_password (call)
+Start time: 2023-01-20 00:46:08.140497
+Start name method: enter_without_password
+
+End time: 2023-01-20 00:46:10.608490
+End name method: enter_without_password
+URL: https://shop.by/
+
+-----
+
+-----
+Test: test_shop_page.py::TestUserFormPage::TestUserForm::test_change_user_data (call)
+Start time: 2023-01-20 00:46:22.347838
+Start name method: enter_user_page
+
+End time: 2023-01-20 00:46:28.482118
+End name method: enter_user_page
+URL: https://shop.by/management/settings/update/
+
+-----
+
+-----
+Test: test_shop_page.py::TestUserFormPage::TestUserForm::test_change_user_data (call)
+Start time: 2023-01-20 00:46:28.483117
+Start name method: change_user_data
+
+
+-----
+Test: test_shop_page.py::TestUserFormPage::TestUserForm::test_change_user_data (call)
+Start time: 2023-01-20 00:46:28.637693
+Start name method: change_user_date
+
+End time: 2023-01-20 00:46:32.982552
+End name method: change_user_date
+URL: https://shop.by/management/settings/update/
+
+-----
+
+-----
+Test: test_shop_page.py::TestUserFormPage::TestUserForm::test_change_user_data (call)
+Start time: 2023-01-20 00:46:33.099991
+Start name method: generate_new_user_data
+
+End time: 2023-01-20 00:46:33.384693
+End name method: generate_new_user_data
+URL: https://shop.by/management/settings/update/
+
+-----
+End time: 2023-01-20 00:46:34.150022
+End name method: change_user_data
+URL: https://shop.by/management/settings/update/
+
+-----
+
+-----
+Test: test_shop_page.py::TestUserFormPage::TestUserForm::test_user_can_change_gender (call)
+Start time: 2023-01-20 00:46:45.891299
+Start name method: enter_user_page
+
+End time: 2023-01-20 00:46:52.069881
+End name method: enter_user_page
+URL: https://shop.by/management/settings/update/
+
+-----
+
+-----
+Test: test_shop_page.py::TestUserFormPage::TestUserForm::test_user_can_change_gender (call)
+Start time: 2023-01-20 00:46:52.069881
+Start name method: change_gender
+
+End time: 2023-01-20 00:46:53.072428
+End name method: change_gender
+URL: https://shop.by/management/settings/update/
+
+-----
+
+-----
+Test: test_shop_page.py::TestUserFormPage::TestUserForm::test_user_can_change_gender (call)
+Start time: 2023-01-20 00:46:53.072428
+Start name method: change_gender
+
+End time: 2023-01-20 00:46:53.361030
+End name method: change_gender
+URL: https://shop.by/management/settings/update/
+
+-----
+
+-----
+Test: test_shop_page.py::TestUserFormPage::TestUserForm::test_enter_short_password (call)
+Start time: 2023-01-20 00:47:05.439538
+Start name method: enter_user_page
+
+End time: 2023-01-20 00:47:11.798030
+End name method: enter_user_page
+URL: https://shop.by/management/settings/update/
+
+-----
+
+-----
+Test: test_shop_page.py::TestUserFormPage::TestUserForm::test_enter_short_password (call)
+Start time: 2023-01-20 00:47:11.798030
+Start name method: enter_short_password
+
+End time: 2023-01-20 00:47:12.292406
+End name method: enter_short_password
+URL: https://shop.by/management/settings/update/
+
+-----
+
+-----
+Test: test_shop_page.py::TestUserFormPage::TestUserForm::test_change_password (call)
+Start time: 2023-01-20 00:47:24.006485
+Start name method: enter_user_page
+
+End time: 2023-01-20 00:47:30.340094
+End name method: enter_user_page
+URL: https://shop.by/management/settings/update/
+
+-----
+
+-----
+Test: test_shop_page.py::TestUserFormPage::TestUserForm::test_change_password (call)
+Start time: 2023-01-20 00:47:30.340094
+Start name method: change_password
+

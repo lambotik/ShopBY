@@ -32,8 +32,6 @@ class TestUserFormPage:
             new_gender = user_page.change_gender()
             assert cur_gender != new_gender, 'User can not change gender'
 
-
-
         def test_enter_short_password(self, driver):
             user_page = UserFormPage(driver, 'https://shop.by/')
             user_page.open()
