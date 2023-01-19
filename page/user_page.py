@@ -13,8 +13,6 @@ from utilities.logger import Logger
 class UserFormPage(BasePage):
     locators = UserPageLocators()
 
-
-
     # Getters
 
     def get_phone_number(self):
@@ -49,11 +47,11 @@ class UserFormPage(BasePage):
         return self.element_is_visible(self.locators.SELECTED_USER_GENDER).text
 
     def get_save_button(self):
+        self.go_to_element(self.elements_is_clickable(self.locators.SAVE_BUTTON))
         return self.elements_is_clickable(self.locators.SAVE_BUTTON)
 
     def get_save_text(self):
-        save_text = self.element_is_visible(self.locators.SAVE_DONE)
-        print(save_text.text)
+        save_text = self.element_is_visible(self.locators.SAVE_DONE).text
         return save_text
 
     def wait_current_data(self):
@@ -66,12 +64,19 @@ class UserFormPage(BasePage):
     def enter_user_page(self):
         Logger.add_start_step(method='enter_user_page')
         self.element_is_visible(self.locators.USER_ENTER).click()
+        print('Click icon enter')
         self.element_is_visible(self.locators.EMAIL_TAB).click()
+        print('Click Email')
         self.element_is_visible(self.locators.INPUT_EMAIL).send_keys(login.LoginData.email)
+        print(f'Enter your email address')
         self.element_is_visible(self.locators.INPUT_PASSWORD).send_keys(login.LoginData.password)
+        print('Enter your password')
         self.element_is_visible(self.locators.ENTER_BUTTON).click()
+        print('Click Button Enter')
         self.element_is_visible(self.locators.USER_ICON).click()
+        print('Click User Icon')
         self.element_is_visible(self.locators.SETTINGS).click()
+        print('Click Settings')
         Logger.add_end_step(url=self.driver.current_url, method='enter_user_page')
 
     def generate_new_user_data(self):
@@ -82,10 +87,14 @@ class UserFormPage(BasePage):
         last_name = person_info.last_name
         # self.element_is_visible(self.locators.INPUT_NICK_NAME).clear()
         self.element_is_visible(self.locators.INPUT_FIRST_NAME).clear()
+        print('Clear field first name')
         self.element_is_visible(self.locators.INPUT_LAST_NAME).clear()
+        print('Clear field last name')
         # self.element_is_visible(self.locators.INPUT_NICK_NAME).send_keys(nick_name)
         self.element_is_visible(self.locators.INPUT_FIRST_NAME).send_keys(first_name)
+        print('Enter the generated name')
         self.element_is_visible(self.locators.INPUT_LAST_NAME).send_keys(last_name)
+        print('Enter the generated last name')
         Logger.add_end_step(url=self.driver.current_url, method='generate_new_user_data')
         return first_name, last_name
 
@@ -107,14 +116,17 @@ class UserFormPage(BasePage):
         date = random.choice(data_day)
         pyautogui.typewrite(f'{date}')
         pyautogui.press("return")
+        print('Enter random date')
         self.element_is_visible(self.locators.MONTH).click()
         month = random.choice(data_month)
         pyautogui.typewrite(f'{month}')
         pyautogui.press("return")
+        print('Enter random month')
         self.element_is_visible(self.locators.YEAR).click()
         year = random.choice(data_year)
         pyautogui.typewrite(f'{year}')
         pyautogui.press("return")
+        print('Enter random year')
         Logger.add_end_step(url=self.driver.current_url, method='change_user_date')
         return date, month, year
 
@@ -135,25 +147,32 @@ class UserFormPage(BasePage):
               current_last_name)
         print('New Name:', new_first_name, '\nNew Last Name:', new_last_name)
         self.get_save_button().click()
+        print('Click Button Save')
         change_done = self.get_save_text()
         assert change_done == 'Личные данные сохранены', 'Changes were not saved'
-        assert (current_first_name, current_last_name) != (
-            new_first_name, new_last_name), 'First Name and Last Name has not been changed'
-        print(int(current_day), current_month, int(current_year))
-        print(int(date), month, int(year))
+        assert (f'{current_first_name}{current_last_name}') != (
+            f'{new_first_name}{new_last_name}'), 'First Name and Last Name has not been changed'
+        print('Date before : ', int(current_day), current_month, int(current_year))
+        print('Date after : ', int(date), month, int(year))
         assert (int(current_day), current_month, int(current_year)) != \
                (int(date), month, int(year))
+        print(f'{change_done}')
         Logger.add_end_step(url=self.driver.current_url, method='change_user_data')
 
     def change_gender(self):
         Logger.add_start_step(method='change_gender')
         cur_gender = self.get_current_gender()
         if cur_gender == self.element_is_visible(self.locators.USER_GENDER_M).text:
+            print('Current gender man')
             self.element_is_visible(self.locators.USER_GENDER_W).click()
+            print('Click gender woman')
         else:
+            print('Current gender woman')
             self.element_is_visible(self.locators.USER_GENDER_M).click()
+            print('Click gender man')
         print(self.get_current_gender())
         self.get_save_button().click()
+        print('Click Button Save')
         self.get_save_text()
         Logger.add_end_step(url=self.driver.current_url, method='change_gender')
         return cur_gender
@@ -161,6 +180,7 @@ class UserFormPage(BasePage):
     def change_password(self):
         Logger.add_start_step(method='change_password')
         self.element_is_visible(self.locators.CHANGE_PASSWORD).click()
+        print('Click change password')
         new = self.element_is_visible(self.locators.NEW_PASSWORD).send_keys('123456789')
         repeat = self.element_is_visible(self.locators.REPEAT_PASSWORD).send_keys('123456789')
         self.elements_is_clickable(self.locators.BUTTON_SAVE_PASSWORD).click()
@@ -171,10 +191,13 @@ class UserFormPage(BasePage):
     def enter_short_password(self):
         Logger.add_start_step(method='enter_short_password')
         self.element_is_visible(self.locators.CHANGE_PASSWORD).click()
+        print('Click change password')
         new = self.element_is_visible(self.locators.NEW_PASSWORD).send_keys('1234567')
+        print(f'Enter short password {new}')
         repeat = self.element_is_visible(self.locators.REPEAT_PASSWORD).send_keys('1234567')
-        time.sleep(5)
+        print(f'Repeat short password {repeat}')
         self.elements_is_clickable(self.locators.BUTTON_SAVE_PASSWORD).click()
+        print('Click Button Save')
         message = self.element_is_visible(self.locators.MESSAGE).text
         print(message)
         Logger.add_end_step(url=self.driver.current_url, method='enter_short_password')
