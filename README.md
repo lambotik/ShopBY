@@ -1,5 +1,4 @@
 # ShopBY
-TestTask
 
 Установить [PyCharm Community](https://www.jetbrains.com/ru-ru/pycharm/download/#section=windows) 
 
