@@ -6,9 +6,12 @@
 
 Установить необходимые библиотеки из файла [requirements.txt](https://github.com/lambotik/ShopBY/blob/main/requirements.txt)
 
-Для получения логов в файле [logger.py](https://github.com/lambotik/ShopBY/blob/main/utilities/logger.py) в переменной
+Для получения логов в файле [logger.py](https://github.com/lambotik/ShopBY/blob/main/utilities/logger.py) в переменной:
+
 file_path = r'C:\Users\Дима\PycharmProjects\ShopBY\logs\log_date_'
-меняем значение пути
+
+меняем значение пути:
+
 file_path = r'Ваш путь до проекта\ShopBY\logs\log_date_'
 
 Перед запуском теста необходимо зайти в файл [login.py](https://github.com/lambotik/ShopBY/blob/main/login.py), и вписать ваш email и пароль от аккаунта shop.by
