@@ -16,4 +16,4 @@ file_path = r'Ваш путь до проекта\ShopBY\logs\log_date_'
 
 Перед запуском теста необходимо зайти в файл [login.py](https://github.com/lambotik/ShopBY/blob/main/login.py), и вписать ваш email и пароль от аккаунта shop.by
 
-Тест кейс для лапок [![Google Sheet](https://img.shields.io/badge/-EXCEL-090909?style=plastic&logo=EXCEL&logoColor=47C5FB)](https://docs.google.com/spreadsheets/d/1mS0bQsnpViVUJp4i8IBH_A3Bjo1jRs8nsKtxFWWDyVE/edit?usp=share_link)
+Тест кейс для лапок [![Google Sheet](https://img.shields.io/badge/-Google Sheet-090909?style=plastic&logo=EXCEL&logoColor=47C5FB)](https://docs.google.com/spreadsheets/d/1mS0bQsnpViVUJp4i8IBH_A3Bjo1jRs8nsKtxFWWDyVE/edit?usp=share_link)
