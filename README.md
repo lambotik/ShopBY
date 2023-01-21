@@ -10,3 +10,5 @@ TestTask
 В файле [logger.py](https://github.com/lambotik/ShopBY/blob/main/utilities/logger.py) file_path = r'C:\Users\Дима\PycharmProjects\ShopBY\logs\log_date_' file_path = r'Ваш путь до проекта\ShopBY\logs\log_date_'
 
 Перед запуском теста необходимо зайти в файл [login.py](https://github.com/lambotik/ShopBY/blob/main/login.py), и вписать ваш email и пароль от аккаунта shop.by
+
+Тест кейс для лапок ![Excel](https://docs.google.com/spreadsheets/d/1mS0bQsnpViVUJp4i8IBH_A3Bjo1jRs8nsKtxFWWDyVE/edit?usp=share_link)
