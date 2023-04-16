@@ -2,7 +2,7 @@
 
 Установить [PyCharm Community](https://www.jetbrains.com/ru-ru/pycharm/download/#section=windows) 
 
-В терминале PyCharm прописать: git clone https://github.com/lambotik/ShopBY.git
+В терминале PyCharm прописать: ```git clone https://github.com/lambotik/ShopBY.git```
 
 Установить необходимые библиотеки из файла [requirements.txt](https://github.com/lambotik/ShopBY/blob/main/requirements.txt)
 
