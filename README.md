@@ -4,7 +4,7 @@
 
 В терминале PyCharm прописать: ```git clone https://github.com/lambotik/ShopBY.git```
 
-Установить необходимые библиотеки из файла [requirements.txt](https://github.com/lambotik/ShopBY/blob/main/requirements.txt)
+Установить необходимые библиотеки из файла [requirements.txt](https://github.com/lambotik/ShopBY/blob/main/requirements.txt) ```pip3 install -r requirements.txt```
 
 Для получения логов в файле [logger.py](https://github.com/lambotik/ShopBY/blob/main/utilities/logger.py) в переменной:
 
